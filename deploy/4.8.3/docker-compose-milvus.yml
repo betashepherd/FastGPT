@@ -198,22 +198,5 @@ services:
       - INITIAL_ROOT_TOKEN=fastgpt
     volumes:
       - ./oneapi:/data
-  m3e-large-api:
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-                count: all
-                  capabilities:
-                    - gpu
-    ports:
-        - 6008:6008
-    container_name: m3e-large-api
-    image: registry.cn-hangzhou.aliyuncs.com/fastgpt_docker/m3e-large-api:latest
-    network:
-      - fastgpt
-    restart: always
-
 networks:
   fastgpt:
