@@ -11,7 +11,7 @@
   },
   "llmModels": [
     {
-      "model": "qwen:14",
+      "model": "qwen:14b",
       "name": "Qwen-14b",
       "maxContext": 16000,
       "avatar": "/imgs/model/qwen.svg",
