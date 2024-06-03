@@ -2,3 +2,7 @@
 
 m3e key
 默认值：sk-aaabbbcccdddeeefffggghhhiiijjjkkk
+
+初始化环境
+apt install docker.io
+apt-get install nvidia-container-runtime

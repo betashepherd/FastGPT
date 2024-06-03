@@ -183,6 +183,8 @@ services:
     networks:
       - fastgpt
     restart: always
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     environment:
       # mysql 连接参数
       - SQL_DSN=root:oneapimmysql@tcp(mysql:3306)/oneapi
@@ -200,3 +202,4 @@ services:
       - ./oneapi:/data
 networks:
   fastgpt:
+    driver: bridge
